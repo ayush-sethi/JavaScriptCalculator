@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styleA1.css" />
+    <script src="./script.js">
+    </script>
+</head>
+
+<body onload="init()">
+    <table class="calc" align="center">
+        <tr>
+            <td colspan="5"><input size="20" type="text" id="txt" onkeypress="epresskey(event)">
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" class="symbols" id="clear" value="c"
+                    style="padding-left: 12px; padding-right: 12px;" onclick="clr()"></td>
+
+            <td> <input type="button" class="symbols" id="/" value="/" onclick="operatorButton('/')"
+                    style="padding-left: 13px; padding-right: 13px;"></td>
+
+            <td><input type="button" class="symbols" id="*" value="*" onclick="operatorButton('*')"
+                    style="padding-left: 12px; padding-right: 12px;"></td>
+
+            <td><input type="button" class="symbols" value="&larr;" id="backspace" onclick="bksp()"
+                    onkeypress="epress(event)" style="padding-left: 8px; padding-right: 8px;"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="nums" value="7" onclick="numericButton('7')"></td>
+
+            <td><input type="button" class="nums" value="8" onclick="numericButton('8')"></td>
+
+            <td><input type="button" class="nums" value="9" onclick="numericButton('9')"></td>
+
+            <td><input type="button" class="symbols" id="+" value="+" onclick="operatorButton('+')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="nums" value="4" onclick="numericButton('4')"></td>
+
+            <td><input type="button" class="nums" value="5" onclick="numericButton('5')"></td>
+
+            <td><input type="button" class="nums" value="6" onclick="numericButton('6')"></td>
+
+            <td><input type="button" class="symbols" id="-" value="-" onclick="operatorButton('-')"
+                    style="padding-left: 12px; padding-right: 12px;"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="nums" value="1" onclick="numericButton('1')"></td>
+
+            <td><input type="button" class="nums" value="2" onclick="numericButton('2')"></td>
+
+            <td><input type="button" class="nums" value="3" onclick="numericButton('3')"></td>
+
+            <td><input type="button" class="symbols" value="!" id="factorial" onclick="fact()"
+                    style="padding-left: 13px; padding-right: 13px;"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="nums" value="0" id="zero" onclick="numericButton('0');dispOnDivZero()"></td>
+
+            <td><input type="button" class="nums" value="00" id="zero-zero"
+                    onclick="numericButton('00');dispOnDivZero()" style="padding-left: 5px; padding-right: 5px;"></td>
+
+            <td><input type="button" class="nums" value="." onclick="numericButton('.')"
+                    style="padding-left: 12px; padding-right: 12px;"></td>
+
+            <td><input type="button" class="symbols" value="=" id="equals" onclick="calculateQueue()"
+                    style="padding-left: 11px; padding-right: 11px;"></td>
+        </tr>
+    </table>
+</body>
+
+</html>

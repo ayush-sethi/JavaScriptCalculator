@@ -1,0 +1,60 @@
+body{
+    margin: auto;
+}
+input:focus {
+    background-color: yellow;
+}
+td{
+    text-align: center;
+}
+.calc{
+    background-color: grey;
+    border-radius: 10px;
+    align-content: stretch;
+}
+#txt{
+    border: white 1px solid;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    text-align: right;
+    padding: 5px;
+    outline: none;
+}
+#txt:focus{
+    border-color: wheat;
+}
+.nums{
+    background-color: beige;
+    color: black;
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: small;
+    font: caption;
+    outline: none;
+    cursor: pointer;
+}
+.symbols{
+    background-color: #4d2600 ;
+    color: ivory;
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: small;
+    font: caption;
+    outline: none;
+    cursor: pointer;
+}
+.nums:hover{
+    background-color: #dddd88;
+}
+.symbols:hover{
+    background-color:  #996633;
+}
+.nums:focus{
+    background-color: #ffff99;
+}
+.symbols:focus{
+    background-color: #cc6600;
+}

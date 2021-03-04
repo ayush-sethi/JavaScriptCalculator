@@ -3,7 +3,8 @@ var input = 0
 //on load
 function init() {
     document.getElementById("txt").value = "0"
-    document.body.style.zoom = "200%" 
+    document.body.style.zoom = "190%" 
+    document.body.style.marginTop = "20px"
 }
 //for backspacing on display key
 function bksp() {
